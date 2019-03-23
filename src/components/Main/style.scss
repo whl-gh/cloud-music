@@ -1,6 +1,13 @@
+@import "../../conmon/variable";
+
 .main-wrap {
     display: flex;
     height: calc(100vh - 100px);
     min-height: 400px;
-    background-color: chocolate;
+    background-color: $body_bg_color;
+    .main-left {
+        display: flex;
+        width: 215px;
+        border-right: 1px solid $border_color;
+    }
 }
