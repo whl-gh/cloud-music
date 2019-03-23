@@ -1,0 +1,15 @@
+@import "../../../conmon/variable";
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    .logo_img {
+        width: 24px;
+        height: 24px;
+    }
+    .logo-text {
+        margin-left: 5px;
+        color: $font_hover_color;
+    }
+}

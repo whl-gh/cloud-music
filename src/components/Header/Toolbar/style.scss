@@ -1,0 +1,25 @@
+@import "../../../conmon/variable";
+
+.toolbar-wrap {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    .toolbar-split:after {
+        content: " ";
+        display: inline-block;
+        width: 1px;
+        background: $font_color;
+        height: 20px;
+        margin: 0 12px;
+    }
+    .toolbar-item {
+        padding: 0 10px;
+    }
+    .toolbar-item:last-child {
+        padding-right: 0;
+    }
+    .toolbar-item:hover {
+        cursor: pointer;
+        color: $font_hover_color;
+    }
+}

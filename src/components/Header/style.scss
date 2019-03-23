@@ -1,0 +1,13 @@
+@import "../../conmon/variable";
+
+.header-wrap {
+    display: flex;
+    padding: 0 15px;
+    height: $nav_height;
+    color: $font-color;
+    background-color: $main_clolor;
+    justify-content: space-between;
+    .header-left, .header-right {
+        display: flex;
+    }
+}

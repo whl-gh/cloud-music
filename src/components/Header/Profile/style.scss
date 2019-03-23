@@ -1,0 +1,42 @@
+@import "../../../conmon/variable";
+
+.profile-wrap{
+    display: flex;
+    align-items: center;
+    .profile-picture,.profile-nick {
+        cursor: pointer;
+        color: $font_color;
+    }
+    .profile-picture {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background-color: $main_bg_color;
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+        }
+        &:hover {
+            box-shadow: 1px 0px 24px lightgoldenrodyellow;
+        }
+    }
+    .profile-nick {
+        cursor: pointer;
+        display: flex;
+        &:hover {
+            color: $font_active_color;
+        }
+        .profile-nick-name {
+            font-size: 12px;
+            max-width: 70px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 5px;
+        }
+        .profile-nick-name, .profile-caret-down{
+            font-style: normal;
+        }
+    }
+}

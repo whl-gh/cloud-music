@@ -1,0 +1,23 @@
+@import "../../../conmon/variable";
+
+.history-wrap {
+    display: flex;
+    align-items: center;
+    .history-btn {
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 1px 9px;
+        border: 1px solid rgba(167,39,39, 1);
+    }
+    .history-btn:last-child {
+        border-left: 0;
+    }
+    .history-btn.active {
+        color: $font_hover_color;
+    }
+    .history-btn:active {
+        color: rgba(167,39,39, 1);
+        background-color: rgba(167,39,39, 0.5);
+    }
+}
