@@ -1,11 +1,11 @@
 import React from "react";
-import Menu from "./Menu";
+import { Sider } from "@/containers/Sider";
 import "./style.scss";
 
 const Main = ()=>(
     <div className="main-wrap">
         <div className="main-left">
-            <Menu />
+            <Sider />
         </div>
         <div className="main-right"></div>
     </div>

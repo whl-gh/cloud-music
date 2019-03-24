@@ -1,0 +1,50 @@
+@import "../../../../conmon/variable";
+
+.menu-header {
+    color: #7D7D7D;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 12px;
+    user-select: none;
+    .menu-header-title:hover {
+        cursor: pointer;
+    }
+    .menu-header-tools {
+        float: right;
+        margin-right: 12px;
+        .menu-header-plus, .menu-header-chevron {
+            width: 12px;
+            padding-left: 12px;
+            color: rgba($color: #7D7D7D, $alpha: 0.5);
+            cursor: pointer;
+            font-size: 14px;
+            &:hover {
+                color: rgba($color: #7D7D7D, $alpha: 1);
+            }
+        }
+    }
+}
+.menu-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &.hide {
+        display: none;
+    }
+    .menu-item {
+        font-size: 13px;
+        color: #5C5C5C;
+        padding: 9px 20px;
+        padding-right: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+        &.active {
+            border-left-color: $main_bg_color;
+            background-color: #E6E7EA;
+        }
+        .menu-item-icon {
+            margin-right: 6px;
+        }
+    }
+}
