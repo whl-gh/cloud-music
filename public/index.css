@@ -30,6 +30,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #root {
+  height: 100%;
+}
+html {
+  min-width: 900px;
+}
 /**
  * Render the `main` element consistently in IE.
  */

@@ -1,10 +1,14 @@
 import React, { useState, Fragment } from "react";
 import "./style.scss";
+import { id } from "postcss-selector-parser";
 
 const List = ({categoty, index, coordinate, hasTools, dispatch })=>{
     const [isHide, setHide] = useState(false);
     let { title, items } = { ...categoty };
     let toggle = (e)=>{
+        if(!categoty.collapse){
+            return;
+        }
         if(e.target.getAttribute("class").lastIndexOf("menu-header-plus")!==-1){
             alert("添加东西")
         }else{

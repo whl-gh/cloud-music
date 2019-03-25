@@ -3,8 +3,8 @@ import "./style.scss";
 
 const History = ()=>(
     <div className="history-wrap">
-        <span className="history-btn fa fa-angle-left active"></span>
-        <span className="history-btn fa fa-angle-right"></span>
+        <span className="fa fa-angle-left  history-btn active"></span>
+        <span className="fa fa-angle-right history-btn"></span>
     </div>
 );
 

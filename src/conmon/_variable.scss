@@ -1,15 +1,13 @@
+// 页面字体颜色
+$font_color: rgba($color: #FFFFFF, $alpha: 0.5);
+$font_hover_color: #FFFFFF;
+$font_active_color: $font_hover_color;
 // 页面主色调
 $main_clolor: #C62F2F;
 $main_bg_color: #a82828;
 $body_bg_color: #FFFFFF;
 // 边框颜色
 $border_color: #E1E1E2;
-// 页面字体颜色
-$font_color: #EEC1C1;
-$font_hover_color: #FFFFFF;
-$font_active_color: $font_hover_color;
-// 导航栏高度
-$nav_height: 50px;
 
 
 @mixin scrollbar {
@@ -21,7 +19,6 @@ $nav_height: 50px;
         width: 8px;
         background-color: #F5F5F7;
     }
-
     &::-webkit-scrollbar-thumb{
         border-radius: 10px;
         background: #E1E1E2;

@@ -1,12 +1,12 @@
 @import "../../../conmon/variable";
 
 .logo-wrap {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     width: 200px;
     .logo_img {
         width: 24px;
         height: 24px;
+        vertical-align: text-top;
     }
     .logo-text {
         margin-left: 5px;

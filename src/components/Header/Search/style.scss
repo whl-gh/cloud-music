@@ -1,8 +1,7 @@
 @import "../../../conmon/variable";
 
 .search-wrap {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     padding: 0 10px;
     .search-group {
         position: relative;
@@ -24,7 +23,7 @@
         }
         .search-input::placeholder {
             font-size: 12px;
-            color: rgba($color: $font_color, $alpha: 0.8);
+            color: rgba(255,255,255,0.3);
         }
         .search-icon {
             position: absolute;
@@ -33,7 +32,7 @@
             top: 5px;
             right: 8px;
             font-size: 12px;
-            color: rgba($color: $font_color, $alpha: 0.8);
+            color: rgba(255,255,255,0.5);
         }
     }
 }

@@ -19,6 +19,7 @@ const menuList = [
     },
     {
         title: "创建的歌单",
+        collapse: true,
         items: [
             { text: "我喜欢的音乐", icon: "fa fa-headphones", checked: false },
             { text: "阿黛尔", icon: "fa fa-headphones", checked: false },
@@ -27,6 +28,7 @@ const menuList = [
     },
     {
         title: "收藏的歌单",
+        collapse: true,
         items: [
             { text: "健身房节奏", icon: "fa fa-headphones", checked: false },
             { text: "华语理智|纵有疾风哈撒给", icon: "fa fa-headphones", checked: false },

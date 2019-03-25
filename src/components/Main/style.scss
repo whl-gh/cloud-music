@@ -1,13 +1,23 @@
 @import "../../conmon/variable";
 
 .main-wrap {
-    display: flex;
-    height: calc(100vh - 100px);
-    min-height: 400px;
+    display: block;
+    height: calc(100% - 100px);
     background-color: $body_bg_color;
+    .main-left, .main-right {
+        height: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
     .main-left {
-        display: flex;
+        display: inline-block;
         width: 215px;
         border-right: 1px solid $border_color;
+    }
+    .main-right {
+        display: inline-block;
+        width: calc(100% - 215px);
     }
 }

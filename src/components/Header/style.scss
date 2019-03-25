@@ -1,13 +1,20 @@
 @import "../../conmon/variable";
 
 .header-wrap {
-    display: flex;
-    padding: 0 15px;
-    height: $nav_height;
-    color: $font-color;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    color: $font_color;
     background-color: $main_clolor;
-    justify-content: space-between;
-    .header-left, .header-right {
-        display: flex;
+    .header-left {
+        float: left;
+    }
+    .header-right {
+        float: right;
+    }
+    &:before,&:after {
+        content: " ";
+        display: block;
+        clear: both;
     }
 }

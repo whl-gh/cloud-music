@@ -1,8 +1,7 @@
 @import "../../../conmon/variable";
 
 .profile-wrap{
-    display: flex;
-    align-items: center;
+    display: inline-block;
     .profile-picture,.profile-nick {
         cursor: pointer;
         color: $font_color;
@@ -16,6 +15,7 @@
             width: inherit;
             height: inherit;
             border-radius: 50%;
+            vertical-align: text-top;
         }
         &:hover {
             box-shadow: 1px 0px 24px lightgoldenrodyellow;
@@ -23,9 +23,8 @@
     }
     .profile-nick {
         cursor: pointer;
-        display: flex;
         &:hover {
-            color: $font_active_color;
+            color: rgba($color: #FFFFFF, $alpha: 1);
         }
         .profile-nick-name {
             font-size: 12px;
