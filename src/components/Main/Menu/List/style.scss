@@ -32,24 +32,26 @@
         display: none;
     }
     .menu-item {
-        font-size: 13px;
-        color: #5C5C5C;
-        padding: 9px 20px;
-        padding-right: 5px;
-        box-sizing: border-box;
-        cursor: pointer;
-        border-left: 3px solid transparent;
-        &.active {
-            border-left-color: $main_bg_color;
-            background-color: #E6E7EA;
-        }
         .menu-item-icon {
             margin-right: 6px;
         }
         > a {
-            color: inherit;
+            box-sizing: border-box;
             display: block;
+            width: 100%;
+            height: inherit;
+            font-size: 13px;
+            color: #5C5C5C;
+            padding: 9px 20px;
             text-decoration: none;
+            border-left: 3px solid transparent;
+            padding-right: 5px;
+        }
+        &.active {
+            > a {
+                border-left-color: $main_bg_color;
+                background-color: #E6E7EA;
+            }
         }
     }
 }
