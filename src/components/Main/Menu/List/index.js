@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
-import { id } from "postcss-selector-parser";
 
 const List = ({categoty, index, coordinate, hasTools, dispatch })=>{
     const [isHide, setHide] = useState(false);
@@ -32,8 +32,10 @@ const List = ({categoty, index, coordinate, hasTools, dispatch })=>{
                     items.map((item, i)=>{
                         return (
                             <li className={`menu-item ${coordinate.toString()===[index,i].toString()?'active':''}`} onClick={(e)=>{dispatch([index, i])}} key={i.toString()}>
-                                <i className={`${item.icon} menu-item-icon`}></i>
-                                <span>{item.text}</span>
+                                <Link to={item.to}>
+                                    <i className={`${item.icon} menu-item-icon`}></i>
+                                    <span>{item.text}</span>
+                                </Link>
                             </li>
                         );
                     })

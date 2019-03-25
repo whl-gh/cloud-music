@@ -46,5 +46,10 @@
         .menu-item-icon {
             margin-right: 6px;
         }
+        > a {
+            color: inherit;
+            display: block;
+            text-decoration: none;
+        }
     }
 }
