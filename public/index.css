@@ -35,6 +35,7 @@ html, body, #root {
 }
 html {
   min-width: 900px;
+  overflow: hidden;
 }
 /**
  * Render the `main` element consistently in IE.
