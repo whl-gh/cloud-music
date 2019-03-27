@@ -1,0 +1,97 @@
+@import "../../../../conmon/variable";
+
+.slideShow-wrap {
+    width: 100%;
+    text-align: center;
+    .slideShow-content {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        user-select: none;
+        .slideShow-prev, .slideShow-next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            z-index: -4;
+            color: $font_color;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .slideShow-prev:hover, .slideShow-next:hover {
+            color: $font_hover_color;
+        }
+        .slideShow-prev {
+            left: 24px;
+        }
+        .slideShow-next {
+            right: 24px;
+        }
+        &:hover .slideShow-prev, &:hover .slideShow-next{
+            z-index: 4;
+        }
+        .slideShow-items {
+            height: inherit;
+            width: 100%;
+            cursor: pointer;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            > li {
+                width: 50%;
+                height: 180px;
+                position: absolute;
+                left: 25%;
+                z-index: 1;
+                bottom: 0;
+                transition: left 0.5s,z-index 0.5s, height 0.5s, filter 0.5s, transform 0.5s;
+                &.active {
+                    z-index: 3;
+                    height: 190px;
+                }
+                &.prev-active, &.next-active {
+                    filter: brightness(50%);
+                }
+                &.prev-active {
+                    left: 0;
+                    z-index: 2;
+                }
+                &.next-active {
+                    left: 50%;
+                    z-index: 2;
+                }
+                > a {
+                    display: inline-block;
+                    width: 100%;
+                    height: inherit;
+                    > img {
+                        width: 100%;
+                        height: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .slideShow-btn {
+        width: auto;
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        > li {
+            box-sizing: border-box;
+            float: left;
+            width: 18px;
+            height: 2px;
+            background: $border_color;
+            margin-right: 6px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                background-color: $main_clolor;
+            }
+        }
+    }
+}

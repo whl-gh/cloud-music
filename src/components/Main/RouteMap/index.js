@@ -8,10 +8,11 @@ let RouteMap = (props)=>{
         <Fragment>
             {
                 routes.map((route, i) => {
+                    var Com = route.component || function(){return (<div>{route.path}</div>)};
                     if(route.exact){
-                        return <Route path={route.path} exact component={ ()=><div>{route.path}</div>} key={i.toString()} />
+                        return <Route path={route.path} exact component={Com} key={i.toString()} />
                     }else{
-                        return <Route path={route.path} component={()=><div>{route.path}</div>} key={i.toString()} />
+                        return <Route path={route.path} component={Com} key={i.toString()} />
                     }
                 })
               }

@@ -19,5 +19,6 @@
     .main-right {
         display: inline-block;
         width: calc(100% - 215px);
+        @include scrollbar(rgba(0,0,0,0.2));
     }
 }

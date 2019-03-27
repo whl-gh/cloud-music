@@ -1,10 +1,11 @@
+import FoundMusic from "@/components/Main/FoundMusic";
 const routes = [
     {
         text: "发现音乐",
         icon: "fa fa-music",
-        path: "/",///foundMusic
+        path: "/",// /foundMusic
         exact: true,
-        component: null
+        component: FoundMusic
     },
     {
         text: "私人FM",

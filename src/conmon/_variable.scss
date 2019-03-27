@@ -10,7 +10,7 @@ $body_bg_color: #FFFFFF;
 $border_color: #E1E1E2;
 
 
-@mixin scrollbar {
+@mixin scrollbar($color: #E1E1E2) {
     &::-webkit-scrollbar-track {
         background-color: transparent;
         border-radius: 10px;
@@ -21,7 +21,7 @@ $border_color: #E1E1E2;
     }
     &::-webkit-scrollbar-thumb{
         border-radius: 10px;
-        background: #E1E1E2;
+        background: $color;
     }
 
 }
