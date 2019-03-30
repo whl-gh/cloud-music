@@ -2,7 +2,7 @@ const menuList = [
     {
         title: "推荐",
         items: [
-            { text: "发现音乐", icon: "fa fa-music", to: "/" },// /foundMusic
+            { text: "发现音乐", icon: "fa fa-music", to: "/foundMusic" },// /foundMusic
             { text: "私人FM", icon: "fa fa-podcast", to: "/privateFM" },
             { text: "视频", icon: "fa fa-video-camera", to: "/video" },
             { text: "朋友", icon: "fa fa-users", to: "/friend" }

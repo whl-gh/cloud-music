@@ -1,15 +1,18 @@
 import React from "react";
+//导入路由
+import routes from "@/route";
 import { Sider } from "@/containers/Sider";
-import RouteMap from "./RouteMap";
+import RouteMap from "@/components/RouteMap";
+
 import "./style.scss";
 
-const Main = ()=>(
+const Main = (props)=>(
     <div className="main-wrap">
         <div className="main-left">
             <Sider />
         </div>
         <div className="main-right">
-            <RouteMap />
+            <RouteMap {...props} routes={routes} />
         </div>
     </div>
 );
